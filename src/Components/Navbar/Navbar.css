@@ -1,0 +1,90 @@
+/* Import Poppins for a luxury feel */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #D8C3A5; /* Earthy beige */
+    color: #4A403A; /* Rich brown */
+    padding: 20px 50px;
+    border-bottom: 3px solid #A67B5B; /* Warm brown separator */
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 100;
+}
+
+/* Admin Panel Text */
+.navbar h1 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #4A403A; /* Rich brown */
+}
+
+/* Profile Image */
+.nav-profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #A67B5B; /* Soft brown border */
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-profile:hover {
+    transform: scale(1.1);
+}
+
+/* 📱 Media Queries for Responsive Design */
+@media (max-width: 1024px) {  /* Tablets */
+    .navbar {
+        padding: 15px 30px;
+    }
+
+    .navbar h1 {
+        font-size: 22px;
+    }
+
+    .nav-profile {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 768px) {  /* Mobile Devices */
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .navbar h1 {
+        font-size: 20px;
+    }
+
+    .nav-profile {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {  /* Small Mobile */
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 12px 15px;
+    }
+
+    .navbar h1 {
+        font-size: 18px;
+    }
+
+    .nav-profile {
+        width: 35px;
+        height: 35px;
+    }
+}

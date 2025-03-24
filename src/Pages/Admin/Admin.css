@@ -1,0 +1,212 @@
+/* Admin.css */
+
+/* Container for the admin page */
+.admin {
+    display: flex;
+    height: 100vh;
+    background-color: #faf7f3; /* Soft off-white with earthy tones */
+    position: relative;
+    font-family: 'Roboto', sans-serif; /* Elegant and readable font */
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    width: 250px;
+    background-color: #8e7f6f; /* Soft earthy brown tone */
+    color: white;
+    padding: 30px;
+    position: fixed; /* Fixed sidebar */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar a:hover {
+    background-color: #b59a6a; /* Warm gold color on hover */
+  }
+  
+  /* Main content area */
+  .main-content {
+    margin-left: 250px; /* Prevent overlap with sidebar */
+    padding: 40px;
+    flex-grow: 1;
+    background-color: #ffffff; /* Clean white background */
+    overflow-y: auto;
+    position: relative;
+  }
+  
+  /* Page content container */
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Page title */
+  .page-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #6c4f37; /* Deep earthy brown for the title */
+    font-weight: 700;
+  }
+  
+  /* Page content box */
+  .page-content {
+    width: 80%;
+    background-color: #f9f3e3; /* Light beige with a hint of gold */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .page-content:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+  }
+  
+  /* Form item styling (input fields) */
+  .addproduct-itemfield {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Label for input fields */
+  .addproduct-itemfield p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #4d4d4d; /* Dark earthy gray */
+    margin-bottom: 10px;
+  }
+  
+  /* Input field styling */
+  .addproduct-itemfield input {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #d1b69e; /* Soft earthy border color */
+    border-radius: 8px;
+    background-color: #faf4eb; /* Light cream background */
+    color: #5e5e5e; /* Subtle text color */
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s, background-color 0.3s;
+  }
+  
+  /* Placeholder styling */
+  .addproduct-itemfield input::placeholder {
+    color: #8e7f74; /* Light brown placeholder */
+  }
+  
+  /* Focus effect on input fields */
+  .addproduct-itemfield input:focus {
+    border-color: #a57c56; /* Soft brownish-gold tone on focus */
+    background-color: #fff8f1; /* Slightly lighter background */
+  }
+  
+  /* Button styling (if added) */
+  .add-product button {
+    background-color: #8e7f6f; /* Soft earthy brown */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Button hover effect */
+  .add-product button:hover {
+    background-color: #b59a6a; /* Gold tone on hover */
+  }
+  
+  /* Media Queries for responsiveness */
+  
+  /* For Tablets and smaller screens (max-width: 768px) */
+  @media (max-width: 768px) {
+    .admin {
+      flex-direction: column; /* Stack the sidebar and content vertically */
+    }
+  
+    .sidebar {
+      width: 100%; /* Sidebar takes full width */
+      height: 60px; /* Reduced height for mobile */
+      position: relative; /* Make it scrollable if needed */
+      padding: 10px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .sidebar a {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .main-content {
+      margin-left: 0; /* Remove left margin for mobile */
+      padding: 20px;
+    }
+  
+    .page-content {
+      width: 90%; /* Make page content take more width */
+      padding: 20px;
+    }
+  
+    .page-title {
+      font-size: 1.5rem; /* Smaller font for page title */
+    }
+  }
+  
+  /* For Mobile devices (max-width: 480px) */
+  @media (max-width: 480px) {
+    .admin {
+      height: auto; /* Allow content to grow as needed */
+    }
+  
+    .sidebar {
+      height: 50px; /* Further reduced height for smaller screens */
+      padding: 8px;
+    }
+  
+    .main-content {
+      padding: 15px;
+    }
+  
+    .page-content {
+      width: 100%; /* Make page content full width */
+      padding: 15px;
+    }
+  
+    .page-title {
+      font-size: 1.3rem; /* Even smaller title on mobile */
+    }
+  
+    .addproduct-itemfield input {
+      padding: 12px; /* Smaller input padding */
+      font-size: 14px;
+    }
+  
+    .add-product button {
+      padding: 10px 15px; /* Smaller button */
+      font-size: 14px;
+    }
+  }
+  

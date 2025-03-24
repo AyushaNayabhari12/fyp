@@ -1,0 +1,193 @@
+.add-product {
+    background-color: #f9f6f2;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ensure padding doesn't affect the width */
+}
+
+/* Input Fields */
+.addproduct-itemfield {
+    margin-bottom: 15px;
+}
+
+.addproduct-itemfield p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #5a3e2b;
+    margin-bottom: 5px;
+}
+
+.addproduct-itemfield input,
+.add-product-selector {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #8b6f47;
+    border-radius: 5px;
+    font-size: 14px;
+    background: #fff;
+}
+
+/* Price Inputs */
+.addproduct-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addproduct-price .addproduct-itemfield {
+    width: 48%;
+}
+
+/* Upload Section */
+.upload-section {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.addproduct-thumbnail-img {
+    width: 80px; 
+    height: 80px;
+    border-radius: 6px;
+    border: 1.5px dashed #A67B5B;
+    padding: 8px;
+    transition: 0.3s ease-in-out;
+    object-fit: cover;
+    background-color: #f9f6f2;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Add Button */
+.addproduct-btn {
+    width: 100px;
+    padding: 10px;
+    background: #8B6F47;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Hover Effects */
+.addproduct-btn:hover {
+    background: #7A5F3D;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .add-product {
+        width: 95%;
+        margin-top: 40px;
+    }
+
+    .addproduct-thumbnail-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .addproduct-btn {
+        width: 90px;
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+/* For small screens (max-width: 768px), fix layout to prevent sidebar overlap */
+@media screen and (max-width: 768px) {
+    .add-product {
+        width: 90%;
+        margin-top: 20px; /* Adjusted top margin */
+    }
+
+    /* Ensure the form content fits within the container */
+    .addproduct-thumbnail-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .addproduct-btn {
+        width: 90px;
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    /* Fix layout for smaller screens to avoid hiding under sidebar */
+    .add-product {
+        margin-left: auto;
+        margin-right: auto;
+        display: block; /* Ensures form takes up the full width when sidebar shrinks */
+    }
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal-content p {
+    font-size: 1.2rem;
+    color: #4a3f35;
+    margin-bottom: 20px;
+  }
+  
+  .modal-content button {
+    background-color: #8e7f6f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .modal-content button:hover {
+    background-color: #b59a6a;
+  }
+  
+
+/* For very small screens (max-width: 480px), tweak layout further */
+@media screen and (max-width: 480px) {
+    .add-product {
+        width: 100%;
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    .addproduct-thumbnail-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .addproduct-btn {
+        width: 85px;
+        font-size: 12px;
+        padding: 7px;
+    }
+}
