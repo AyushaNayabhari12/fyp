@@ -1,0 +1,6 @@
+[submodule "admin"]
+	path = admin
+	url = https://github.com/AyushaNayabhari12/Luxe-and-loom.git
+[submodule "backend"]
+	path = backend
+	url = https://github.com/AyushaNayabhari12/Luxe-and-loom.git
